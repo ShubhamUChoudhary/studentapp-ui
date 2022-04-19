@@ -17,11 +17,11 @@ pipeline {
 }
                   }
             }
-            stage('Quality check'){
+           stage('Quality Check'){
             steps {
-            waitForQualityGate true
-            }
-            }
+                waitForQualityGate true
+}
+}
         stage('Deploy'){
             steps {
                 echo 'Hello World'
