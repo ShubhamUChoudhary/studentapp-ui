@@ -17,6 +17,11 @@ pipeline {
 }
                   }
             }
+            stage('Quality gates'){
+            steps {
+            waitForQualityGate true
+            }
+            }
         stage('Deploy'){
             steps {
                 echo 'Hello World'
