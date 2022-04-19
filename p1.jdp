@@ -19,7 +19,7 @@ pipeline {
             }
            stage('Quality Check'){
             steps {
-waitForQualityGate false
+waitForQualityGate true
 }
 }
         stage('Deploy'){
