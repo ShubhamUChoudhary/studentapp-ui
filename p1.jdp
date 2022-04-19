@@ -17,7 +17,7 @@ pipeline {
 }
                   }
             }
-            stage('Qualitygates'){
+            stage('Quality check'){
             steps {
             waitForQualityGate true
             }
