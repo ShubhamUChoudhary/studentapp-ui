@@ -16,11 +16,6 @@ pipeline {
             echo 'Hello World'
                   }
             }
-            stage('Quality Check'){
-            steps {
-           echo 'Hello World'
-            }
-                }
         stage('Deploy'){
             steps {
                 echo 'Hello World'
