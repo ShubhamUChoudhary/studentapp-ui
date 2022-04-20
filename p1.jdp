@@ -19,8 +19,7 @@ pipeline {
             }
         stage('Deploy'){
             steps {
-                echo 'Hello World'
-                }
+deploy adapters: [tomcat9(credentialsId: 'd43d8e57-75b6-4a62-818c-786faf3c2d89', path: '', url: 'http://44.204.114.155:8080/')], contextPath: '/', war: '**/*.war'                }
                 }
                 }
                 }
